@@ -1,0 +1,19 @@
+{
+  "name": "NextLevelWeek-Valoriza",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/server.ts"
+  },
+  "repository": "https://github.com/silveirajorge/NextLevelWeek-Valoriza.git",
+  "author": "Jorge Silveira <jlrs19833@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.4"
+  }
+}
