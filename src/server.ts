@@ -1,6 +1,9 @@
+import "reflect-metadata";
 import express from "express";
+import { router } from "./routes";
 
-// @types/express
+import "./database"
+
 const app = express();
 
 /**
@@ -11,15 +14,8 @@ const app = express();
  * PATCH  => Alterar uma informação específica
  */
 
-app.get("/test", (request, response) => {
-  // Request => Entrando
-  // Response => Saindo
-  return response.send("Olá Jorge");
-});
+ app.use(express.json());
 
-app.post("/test-post", (request, response) => {
-  return response.send("Olá NLW método POST");
-});
+app.use(router);
 
-// http://localhost:3000
 app.listen(3000, () => console.log("Server is running"));
